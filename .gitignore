@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore log files
+*.log
+
+# Ignore environment file
+.env
+
+# Ignore local settings file
+local_settings.py
+
+# Ignore virtual environment
+env/
+env*/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore IDE files
+*.swp
+*.swo
+*.swn
+*.swo
+.idea/
+.vscode/
+
+# Ignore backup files
+*~
+
+# Ignore pycache folders
+__pycache__/
+
+# Ignore deployment related files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore any other generated files
+*.bak
+*.tmp

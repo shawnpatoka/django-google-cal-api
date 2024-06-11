@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Your Google Calendars</h1>
+<ul>
+    {% for calendar in calendars %}
+    <li>{{ calendar.summary }}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

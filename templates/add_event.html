@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Add an Event</h1>
+<form method="POST">
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label for="summary" class="form-label">Summary</label>
+        <input type="text" class="form-control" id="summary" name="summary">
+    </div>
+    <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" name="location">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control" id="description" name="description">
+    </div>
+    <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date" name="date">
+    </div>
+    <div class="mb-3">
+        <label for="start_time" class="form-label">Start Time</label>
+        <input type="time" class="form-control" id="start_time" name="start_time">
+    </div>
+    <div class="mb-3">
+        <label for="end_time" class="form-label">End Time</label>
+        <input type="time" class="form-control" id="end_time" name="end_time">
+    </div>
+    <div class="mb-3">
+        <label for="attendees" class="form-label">Attendees</label>
+        <select class="form-select" multiple aria-label="Multiple select example" id="attendees" name="attendees">
+            <option value="dev@aavwi.com">Shawn Patoka</option>
+            <option value="rick@aavwi.com">Rick Christman</option>
+        </select>
+    </div>
+
+
+    <button class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
